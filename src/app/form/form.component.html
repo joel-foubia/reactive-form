@@ -1,0 +1,13 @@
+<form #formPerson="ngForm" (ngSubmit)="onSubmitForm(formPerson)">
+    <label for="nameInput">Entrez votre Nom ci-dessous!</label>
+    <input type="text" name="name" id="nameInput" placeholder="Joel Foubia" [(ngModel)]="userName"/>
+    <br />
+    <label for="emailInput">Entrez votre adresse email ci-dessous!</label>
+    <input type="email" name="email" id="emailInput" placeholder="translocutor@gmail.com" [(ngModel)]="userEmail"/>
+    <br />
+    <label for="professionInput">Entrez votre adresse email ci-dessous!</label>
+    <input type="text" name="profession" id="professionInput" placeholder="Software Engineer" [(ngModel)]="userProfession"/>
+    <br />
+
+    <button type="submit">Envoyer</button>
+</form>
